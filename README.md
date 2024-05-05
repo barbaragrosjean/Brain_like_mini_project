@@ -15,9 +15,12 @@ alongside images of objects set against a natural landscape background (RGB chan
 - matplotlib
 - sklearn
 - optuna
-
+- pandas
+- torchvision
 
 ## Example of use
 
-
+#### Load the data
+#### Load the model 
+#### Run the file test.py
 
