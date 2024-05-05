@@ -31,7 +31,8 @@ def save_activations(activations,data_type, rnd = False):
         
         
 def load_activations(data_type, rnd = False):
-    layers = ['conv1', 'layer1', 'layer2', 'layer3', 'layer4', 'avgpool']
+    if rnd == True : layers = [ 'layer2']
+    else : layers = ['conv1', 'layer1', 'layer2', 'layer3', 'layer4', 'avgpool']
     ACTIVATIONS = {}
     for layer_name in layers :
         if rnd == False : path = f'Activations/{data_type}_{layer_name}.csv'
