@@ -39,9 +39,7 @@ Provided in the notebook: a way to store the figures and store and load the acti
 Note that if you already have the activation stored in the folders Activations and Activations_RND, we can jump the part A. Extract the layer activations and go to section B. to load the saved activations.
 
 #### Week 7 Notebook
-The Week7 notebook aims to develop the data-driven approach. A shallow convolutional neural network is trained to fit the neural data and the stimuli. Previously to the train, a grid search is done for the training hyperparameter using the Optuna module. 
-
-Provided in the notebook: a way to store and load the trained model. 
+The Week7 notebook aims to develop the data-driven approach. A shallow convolutional neural network is trained to fit the neural data and the stimuli. Previously to the train, a grid search is done for the training hyperparameter using the Optuna module. The model is store in the same repository as the notebook at the end.
 
 #### Test Notebook
 The test notebook aims to test the best-performing model from the exploration. The model chosen is a convolutional neural network train above the activations extracted from layer 3 of a pre-trained Resnet, combining the data-driven and task-driven approaches. It contains a way of loading the model: 'res_cnn_layer3.pth' and evaluating it. 
