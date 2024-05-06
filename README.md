@@ -1,14 +1,9 @@
 # Predicting IT neuron activity
 NX-414 Brain-like computation and intelligence, EPFL
 
-This project aims to explore different approaches and models to predict neural responses from the inferior temporal (IT) cortex and visual stimulus shown during an 
-object recognition task on monkeys.
+The objective of this project is to investigate various modeling approaches for predicting neural activity originating from the inferior temporal (IT) cortex in monkeys when presented with visual stimuli during an object recognition task.
 
-## Dataset
-The data used are from the paper of Majaj, Hong et al. Weighted Sums of IT Firing Rates Predict Recognition Performance. It consists of recording from multielectrode arrays implanted in the IT cortex of monkeys (168 neurons),
-alongside images of objects set against a natural landscape background (RGB channels, $24\times224$ pixels).}
-
-## Requirment
+## Requirements
 - Python >= 3.5
 - numpy
 - pytorch
@@ -17,18 +12,24 @@ alongside images of objects set against a natural landscape background (RGB chan
 - optuna
 - pandas
 - torchvision
-- down h5py
 
-## Example of use
-This project contains three notebooks. 
+## Usage
+The code is set for reproducibility with fixed random seeds for numpy, pytorch and cuda. As our models are heavy to train, we recommend to use a GPU. The code is set to run on a GPU if available, otherwise it will run on a CPU.
+
+## Dataset
+The datasets utilized are sourced from Majaj et
+al. (Journal of Neuroscience, 2015), and have undergone preprocessing,
+encompassing neural recordings obtained via multielectrode arrays
+implanted in the IT cortex of monkeys (168 neurons), alongside images
+of objects set against a natural landscape background (RGB channels,
+224 × 224 pixels). 
+
+## Notebooks
+This project contains four notebooks: week6.ipynb (Ridge linear regression from input pixels and task-driven approach), week7.ipynb (data-driven approach), week9.ipynb (model exploration), **test.ipynb** (best performing model). 
+**Each notebook needs to be run in the same folder as the utils.py file.**
 
 #### Load the data
-All the notebooks contain at the beginning, cells to load the data from a Google Drive repository. 
-By running it you will be bring to install the gdown h5py module and use the utils file provided for the load and visualization functions. 
-All the notebooks need to be run in the same repository as the utils.py files.
-
-#### Formate the data
-The data are packed into Dataset and Dataloader instances (torch.utils.data module).  
+The data can be downloaded directly from all the notebooks using the utils.py module. 
 
 #### Week 6 Notebook
 
