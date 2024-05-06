@@ -33,14 +33,18 @@ This project comprises four notebooks: week6.ipynb (Ridge linear regression from
 The second part of this notebook (task-driven approach) requires either extracting and storing (Section A) or directly loading the previously saved layer activations from the PyTorch ResNet50 (Section B). The second option requires the files *ACTIVATIONS* and *ACTIVATIONS_RND* to be in the same folder as week6.ipynb. 
 The *functions.py* file also needs to be located in the same folder.
 
-#### week7.ipynb
+- **week7.ipynb**
+
 A data-driven approach is implemented in this notebook. The model can either be trained in a first place, but can also be directly loaded from the *c3l1.pth* file for further evaluation.
 
-#### week9.ipynb
+- **week9.ipynb**
+
 Three different models are trained independently in this notebook. The second model is our best performing model.
 
-#### test.ipynb
+- **test.ipynb**
+
 This notebook comprises the evaluation of our best-performing model: a 3-convolutional-layer deep neural network followed by 2 fully-connected layers, trained on top of the ResNet50 third convolutional layer. The notebook needs to be run in the same folder as the model file *res_cnn_layer3.pth*.
 
 Overall, you execution folder should contain:
+- 
 
