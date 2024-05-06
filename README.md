@@ -25,27 +25,21 @@ of objects set against a natural landscape background (RGB channels,
 224 × 224 pixels). 
 
 ## Notebooks
-This project contains four notebooks: week6.ipynb (Ridge linear regression from input pixels and task-driven approach), week7.ipynb (data-driven approach), week9.ipynb (model exploration), **test.ipynb** (best performing model). 
-**Each notebook needs to be run in the same folder as the utils.py file.**
+This project comprises four notebooks: week6.ipynb (Ridge linear regression from input pixels and task-driven approach), week7.ipynb (data-driven approach), week9.ipynb (model exploration), test.ipynb (evaluation of our best performing model). 
+**Each notebook needs to be run in the same folder as the utils.py file.** Each notebook encompasses model training and evaluation. The metrics used are the mean explained variance and correlation along each neuron.
 
 #### Load the data
 The data can be downloaded directly from all the notebooks using the utils.py module. 
 
 #### Week 6 Notebook
-
-The Week6 notebook aims to develop the task-driven approach. The first part is about the methods to regress neural data to image stimuli. The second part is about using a pre-trained Resnet and a randomly initialized Resnet feed with the neural data to extract the layer activations at different levels and regress them into image stimuli. 
-The models used are from the module torchvision.models that is installed by running the notebook.
-
-Provided in the notebook: a way to store the figures and store and load the activations. 
-Note that if you already have the activation stored in the folders Activations and Activations_RND, we can jump the part A. Extract the layer activations and go to section B. to load the saved activations.
+The second part of this notebook (task-driven approach) requires either extracting and storing (Section A) or directly loading the previously saved layer activations from the PyTorch ResNet50 (Section B). The second option requires the files *ACTIVATIONS* and *ACTIVATIONS_RND* to be in the same folder as week6.ipynb. 
+The *functions.py* file also needs to be located in the same folder.
 
 #### Week 7 Notebook
-The Week7 notebook aims to develop the data-driven approach. A shallow convolutional neural network is trained to fit the neural data and the stimuli. Previously to the train, a grid search is done for the training hyperparameter using the Optuna module. The model is store in the same repository as the notebook at the end.
+A data-driven approach is implemented in this notebook. The model can either be trained in a first place, but can also be directly loaded from the *c3l1.pth* file for further evaluation.
+
+#### Week 9 Notebook
+Three different models are trained independently in this notebook. The second model is our best performing model.
 
 #### Test Notebook
-The test notebook aims to test the best-performing model from the exploration. The model chosen is a convolutional neural network train above the activations extracted from layer 3 of a pre-trained Resnet, combining the data-driven and task-driven approaches. It contains a way of loading the model: 'res_cnn_layer3.pth' and evaluating it. 
-The notebook needs to be run in the same repository as the model.
-
-#### Èvaluate the model
-The metrics used are from sklearn.metrics library for the explained variance score and numpy library for the correlation. All the plots are done using matplotlib.pyplot library. 
-
+This notebook comprises the evaluation of our best-performing model: a 3-convolutional-layer deep neural network followed by 2 fully-connected layers, trained on top of the ResNet50 third convolutional layer. The notebook needs to be run in the same folder as the model file *res_cnn_layer3.pth*.
