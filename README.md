@@ -5,13 +5,13 @@ The objective of this project is to investigate various modeling approaches for 
 
 ## Requirements
 - Python >= 3.5
-- numpy
-- pytorch
-- matplotlib
-- sklearn
+- Numpy
+- PyTorch
+- Matplotlib
+- Sklearn
 - optuna
-- pandas
-- torchvision
+- Pandas
+- Torchvision
 
 ## Usage
 The code is set for reproducibility with fixed random seeds for numpy, pytorch and cuda. As our models are heavy to train, we recommend to use a GPU. The code is set to run on a GPU if available, otherwise it will run on a CPU.
