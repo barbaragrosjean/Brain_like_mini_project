@@ -45,7 +45,7 @@ Three different models are trained independently in this notebook. The second mo
 
 This notebook comprises the evaluation of our best-performing model: a 3-convolutional-layer deep neural network followed by 2 fully-connected layers, trained on top of the ResNet50 third convolutional layer. The notebook needs to be run in the same folder as the model file *res_cnn_layer3.pth*.
 
-Overall, your execution folder should contain
+## Overall, your execution folder should contain:
 - 4 notebooks: week6.ipynb, week7.ipynb, week9.ipynb, test.ipynb
 - functions.py
 - utils.py
