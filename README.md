@@ -1,4 +1,4 @@
-# Brain Like computation mini-project: Predicting IT neuron activity
+# Predicting IT neuron activity
 NX-414 Brain-like computation and intelligence, EPFL
 
 This project aims to explore different approaches and models to predict neural responses from the inferior temporal (IT) cortex and visual stimulus shown during an 
