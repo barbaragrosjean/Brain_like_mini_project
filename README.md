@@ -28,7 +28,8 @@ of objects set against a natural landscape background (RGB channels,
 This project comprises four notebooks: week6.ipynb (Ridge linear regression from input pixels and task-driven approach), week7.ipynb (data-driven approach), week9.ipynb (model exploration), test.ipynb (evaluation of our best performing model). 
 **Each notebook needs to be run in the same folder as the utils.py file.** Each notebook encompasses model training and evaluation. The metrics used are the mean explained variance and correlation along each neuron. The data can be downloaded directly from all the notebooks using the utils.py module. 
 
-- week6.ipynb
+- **week6.ipynb**
+
 The second part of this notebook (task-driven approach) requires either extracting and storing (Section A) or directly loading the previously saved layer activations from the PyTorch ResNet50 (Section B). The second option requires the files *ACTIVATIONS* and *ACTIVATIONS_RND* to be in the same folder as week6.ipynb. 
 The *functions.py* file also needs to be located in the same folder.
 
