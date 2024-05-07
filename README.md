@@ -35,7 +35,7 @@ The *functions.py* file also needs to be located in the same folder.
 
 - **week7.ipynb**
 
-A data-driven approach is implemented in this notebook. The model can either be trained in a first place, but can also be directly loaded from the *c3l1.pth* file for further evaluation.
+A data-driven approach is implemented in this notebook. 
 
 - **week9.ipynb**
 
